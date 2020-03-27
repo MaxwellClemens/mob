@@ -126,7 +126,7 @@ func startTimer(timerInMinutes string) {
 			sayOkay(timerInMinutes + " minutes timer started (finishes at approx. " + timeOfTimeout + ")")
 		}
 	} else {
-		command := exec.Command("sh", "-c", "( sleep "+timerInSeconds+" && msg '*' \"It's time to switch! Use 'mob next'\"")
+		command := exec.Command("sh", "-c", "( sleep "+timerInSeconds+" && msg '*' \"It's time to switch! Use 'mob next'\" )")
 		if debug {
 			fmt.Println(command.Args)
 		}
